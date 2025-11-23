@@ -1,0 +1,192 @@
+/* para el menu nav */
+
+header{
+    font-family: 'Shrek';
+}
+
+
+.contenedorfooter{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.contenedorfooter ul{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contenedorfooter li {
+    color: #B0C400;
+    list-style: none;
+}
+
+
+.header2{
+    text-align: center;
+    background-color: #5C452D;
+    padding: 10px 5px;
+    margin-bottom: 3%;
+}
+
+.navbar {
+    background-color: #5C452D;
+    color: #B0C400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo a {
+    color:#B0C400 ;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    display: none; 
+    flex-direction: column;
+    justify-content:space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.menu-icon span {
+    width: 100%;
+    height: 4px;
+    background-color: #B0C400;
+}
+
+
+.menu-items {
+    list-style: none;
+    display: flex;
+}
+
+.menu-items li {
+    text-shadow:  10px 10px 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+
+.menu-items a {
+    color:#B0C400;
+    text-decoration: none;
+}
+
+.menu-op{
+    justify-content:space-between;
+}
+
+@media (max-width: 768px) {
+.menu-icon {
+    display: flex;
+}
+
+.menu-items {
+    display: none; 
+    flex-direction: column;
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #E1DFB6;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+  /* Mostrar el menú cuando el checkbox está marcado */
+.menu-toggle-checkbox:checked ~ .menu-items {
+    display: flex;
+}
+
+  /* Opcional: Cambiar icono a X cuando está abierto */
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 8px);
+}
+
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -8px);
+}
+}
+
+
+.FooterMarron{
+    background-color:  #5C452D;
+    padding: 1% ;/*espacio en el footer*/
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    font-family: 'Shrek';
+}
+
+.FooterMarron p{
+    color: #B0C400;
+    font-family: 'shrek';
+}
+
+.footercontenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    font-size: small;
+}
+
+.footercontenedor ul li a{
+    list-style: none;
+    margin-bottom: 10px;
+    margin: 0 auto;
+}
+.footercontenedor a{
+    color:#B0C400;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .footercontenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        font-size: medium; 
+    }
+
+
+    .FooterMarron p {
+        text-align: center;
+        font-size: small;
+        margin-bottom: 0; 
+    }
+
+    .footercontenedor > div {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .footercontenedor a {
+        display: block; 
+    }
+}

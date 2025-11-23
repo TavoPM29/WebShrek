@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'Shrek'; 
+    src: url('../fuentes/shrek/font/SHREK.TTF') format('truetype');
+}
+
+
+.bodyconfirmacion{
+background-color: #E1DFB6;
+}
+/* Estilo general para  seccion de formulario y confirmación */
+.sectionContenedorForm {
+    background-color: #E1DFB6;
+    margin: 30px auto; 
+    padding: 5%; 
+    max-width: 700px; 
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(66, 29, 29);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color:#5b7937;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgb(66, 29, 29);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #5b7937;
+    outline: none;
+}
+
+.details-row, .name-row {
+    display: flex;
+    gap: 20px;
+}
+
+.details-row .form-group, .name-row .form-group {
+    flex: 1;
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #5b7937; 
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.submit-button:hover {
+    background-color: #4a642e;
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+}
+
+
+.confirmation-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 40px); 
+    border-radius: 15px;
+}
+
+.confirm-icon {
+    font-size: 4rem;
+    color: #5b7937; /* Color de éxito */
+    margin-bottom: 20px;
+}
+
+.confirm-title {
+    font-family: 'Shrek';
+    font-size: 2.5rem;
+    color:#B0C400;
+    margin-bottom: 15px;
+}
+
+.confirm-text {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgb(66, 29, 29); 
+    color:#B0C400;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.back-button:hover {
+    background-color:gray;
+    transform: translateY(-1px);
+}
+
+.back-button.secondary:hover {
+    background-color:black;
+}
+
+
+@media (max-width: 600px) {
+    .details-row, .name-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .sectionContenedorForm {
+        margin: 5% 5%;
+        padding: 5%;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .back-button {
+        width: 100%;
+        text-align: center;
+    }
+}

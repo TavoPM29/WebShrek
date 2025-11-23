@@ -1,0 +1,93 @@
+
+
+@font-face {
+    font-family: 'Shrek'; 
+    src: url('../fuentes/shrek/font/SHREK.TTF') format('truetype');
+}
+
+
+body {
+    font-family: 'Shrek', Arial;
+    color: #6a3e14;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+    background-color: #E1DFB6;
+    margin: 0;
+    padding: 0; 
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);;
+    
+}
+
+h1{
+    font-family: 'Shrek'; 
+    color: #B0C400;
+    text-align: center;
+}
+
+p { font-family:'Shrek';
+    color: #6a3e14;
+}
+
+.contenedor404 {
+    width: 100%; 
+    max-width: 500px; 
+    text-align: center;
+    padding: 20px; 
+    margin: 10px; 
+    line-height: 1.6;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 15px;
+}
+
+.boton {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 30px;
+    border-radius: 10px;
+    background-color: rgb(175, 40, 47);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.boton:hover {
+    background-color: rgb(200, 40, 45);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+@media (max-width: 576px) {
+    
+    .contenedor404 {
+        max-width: 90%; /* Usa casi todo el ancho de la pantalla */
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    p {
+        font-size: 1em;
+    }
+    
+    .boton {
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 80%; 
+    }
+
+    .img-centrada {
+        width: 90%; 
+    }
+}
+
+
+
