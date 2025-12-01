@@ -113,6 +113,9 @@ header{
 .menu-toggle-checkbox:checked ~ .menu-items {
     display: flex;
 }
+    header nav .menu-toggle-checkbox:checked ~ section .sectionContenedorForm{
+        margin-top:100px;
+    }
 
   /* Opcional: Cambiar icono a X cuando está abierto */
 .menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(1) {
