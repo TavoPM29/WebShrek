@@ -2,6 +2,11 @@
 
 header{
     font-family: 'Shrek';
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background-color: #5C452D;
 }
 
 
@@ -27,8 +32,6 @@ header{
 .header2{
     text-align: center;
     background-color: #5C452D;
-    padding: 10px 5px;
-    margin-bottom: 3%;
 }
 
 .navbar {
@@ -38,7 +41,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    position: relative;
 }
 
 .logo a {
@@ -88,7 +90,53 @@ header{
     justify-content:space-between;
 }
 
+/*media queries para moviles y tablet */
+
 @media (max-width: 768px) {
+.menu-icon {
+    display: flex;
+}
+
+.menu-items {
+    display: none; 
+    flex-direction: column;
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #E1DFB6;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu-items li {
+    margin: 10px 0;
+}
+
+  /* Mostrar el menú cuando el checkbox está marcado */
+.menu-toggle-checkbox:checked ~ .menu-items {
+    display: flex;
+}
+    header nav .menu-toggle-checkbox:checked ~ section .sectionContenedorForm{
+        margin-top:100px;
+    }
+
+  /* Opcional: Cambiar icono a X cuando está abierto */
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 8px);
+}
+
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle-checkbox:checked ~ .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -8px);
+}
+}
+
+
+@media (max-width: 992px) {
 .menu-icon {
     display: flex;
 }
@@ -178,6 +226,38 @@ header{
     .FooterMarron p {
     background-color: #6a3e14;
     color: #e1dfb6;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #5a3411;
+    }
+
+    .footercontenedor > div {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .footercontenedor a {
+        display: block; 
+    }
+}
+
+@media (max-width: 992px) {
+
+    .footercontenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin: 0;
+        font-size: medium; 
+    }
+
+
+    .FooterMarron p {
+    background-color: #5C452D;
+    color: #B0C400;
     padding: 20px 0;
     text-align: center;
     border-top: 2px solid #5a3411;
