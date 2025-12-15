@@ -245,7 +245,7 @@ background-color:#c2be6e;
 
 @media (min-width: 992px) {
     .caja-musical {
-        margin: 5% auto;
+        margin:  auto;
         padding: 1vw; 
     }
 
@@ -269,7 +269,7 @@ background-color:#c2be6e;
 
 @media (min-width: 768px) {
     .caja-musical {
-        margin: 5% auto;
+        margin: auto;
         padding: 1vw; 
     }
 
@@ -493,12 +493,9 @@ scroll-margin-top: 40vh;
 
 /* medias-queries */
 
-@media (max-width: 1100px) {
-    .section1 {
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding-left: 3%;
+@media (max-width: 1100px) {  
+    .section {
+    margin: auto;
     }
 
 
@@ -508,8 +505,8 @@ scroll-margin-top: 40vh;
     
 
     .caja-musical {
-        margin: 5% 5%;
-    }
+        margin: auto;
+        padding: 10px;
     
     aside {
         margin: 3% 5%;
@@ -525,6 +522,7 @@ scroll-margin-top: 40vh;
         flex-basis: 48%; 
     }
 }
+}
 
 @media (max-width: 768px) {
     .contenedor {
@@ -539,13 +537,13 @@ scroll-margin-top: 40vh;
 }
 
 
+
 /* ESTILOS PARA MÓVILES (Hasta 600px) */
 
 @media (max-width: 600px) {
 
-    .section1 {
-        margin: 5% auto;
-        width: 96%; 
+    .section {
+        width: 100%; 
         padding: 15px;
     }
 
